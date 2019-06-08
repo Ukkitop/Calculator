@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+.wrapper {
+    margin: 0 0 20px 0;
+    width: 600px;
+    height: 500px;
+   /* border: 2px solid #CCC;*/
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 80px);
+    grid-template-rows: repeat(3,100px);
+    justify-content: center;
+    align-content: end;
+  }
+
+  .btnsNumber {
+    /*background-color: #444;*/
+    color: #fff;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 150%;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    
+    
+  }
+  #input{    
+    font-size: 150%;
+    grid-column: 1 / span 4;
+    
+    
+  }
+
+  .operationsButtons{
+    
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    grid-column: 3 / 5;
+    grid-row: 2/ span 2;
+    
+  }
+  .specialButtons{
+      grid-column: 3/5;
+      grid-row: 4/5;
+    
+  }
+
+  .btnNumber {
+    background-color: #5a5a5a; /* Green */
+    border: 1px;
+    margin: 1px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+  }
+  .NumberButtonsWrapper {
+    margin: 0 0 20px 0;
+    
+   /* border: 2px solid #CCC;*/
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(4,60px);
+    justify-content: center;
+    align-content: end;
+  }
+
+  .OperationButtonsWrapper {
+    margin: 0 0 5px 0;
+    
+     display: grid;
+     grid-gap: 5px;
+     grid-template-columns: repeat(3, 60px);
+     grid-template-rows: repeat(2,80px);
+     justify-content: center;
+     align-content: end;
+  }
+
+  .btnOperation {
+    background-color: #5a5a5a; /* Green */
+    border: 1px;
+    margin: 1px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+  }
+
+  .result {
+    background-color: #5a5a5a; /* Green */
+    border: 1px;
+    margin: 1px;
+    color: white;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    grid-column: 2 / span 2;
+    font-size: 25px;
+  }
+
+  .specialButtonsWrapper {
+    margin: 0 0 20px 0;
+    
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(1, 80px);
+    justify-content: center;
+    align-content: end;
+  }
+
+
+  .Reset, .negative, .deleteLast {
+    background-color: #5a5a5a; /* Green */
+    border: 1px;
+    margin: 1px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+  }
