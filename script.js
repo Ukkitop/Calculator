@@ -33,40 +33,33 @@ OperatorsKeys.forEach(function(operator) {
 const ResultKey = document.querySelector(".result");
 
 ResultKey.addEventListener("click", function() {
-  console.log(firstNumber);
-  console.log(input.getAttribute("value"));
-  console.log(operatorPressed);
+ 
   switch (operatorPressed) {
-    case "+":
-      //console.log("+");
+    case "+":    
       input.setAttribute(
         "value",
         parseFloat(firstNumber) + parseFloat(input.getAttribute("value"))
       );
       break;
-    case "-":
-      //console.log("-");
+    case "-":     
       input.setAttribute(
         "value",
         parseFloat(firstNumber) - parseFloat(input.getAttribute("value"))
       );
       break;
-    case "/":
-      //console.log("/");
+    case "/":      
       input.setAttribute(
         "value",
         parseFloat(firstNumber) / parseFloat(input.getAttribute("value"))
       );
       break;
     case "*":
-      //console.log("*");
       input.setAttribute(
         "value",
         parseFloat(firstNumber) * parseFloat(input.getAttribute("value"))
       );
       break;
-  }
-  console.log("result:" + input.getAttribute("value"));
+  }  
   previousKey = "=";
 });
 
@@ -96,8 +89,7 @@ document.addEventListener("keyup", function(e) {
   document.getElementById("input").focus();
   if (isFinite(e.key)) {
     document.getElementById(e.key).click();
-  }
-  console.log(e.key);
+  }  
   switch (e.key) {
     case "+":
       document.getElementById("add").click();
@@ -128,7 +120,6 @@ const DeleteLastKey = document.querySelector(".deleteLast");
 DeleteLastKey.addEventListener("click", function() {
   let inputString = input.getAttribute("value").toString();
   let resultString = inputString.substr(0, inputString.length - 1);
-  console.log(resultString);
   if (resultString === "-") {
     input.setAttribute("value", "");
   } else {
@@ -155,5 +146,4 @@ var inactivityTime = function() {
     // 1 hour timeout
   }
 };
-/*call the function*/
 inactivityTime();
